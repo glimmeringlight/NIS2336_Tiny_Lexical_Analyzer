@@ -1,3 +1,5 @@
+{This is a correct program}
+
 read x
 if 0 < x then
     fac := 1

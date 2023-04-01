@@ -1,4 +1,4 @@
-# A Tiny Language Compiler(Now just a lexer)
+# A Compiler for Tiny Language (Now just a lexer)
 
 ## Build
 

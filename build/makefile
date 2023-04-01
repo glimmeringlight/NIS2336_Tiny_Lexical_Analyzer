@@ -33,5 +33,11 @@ rmexe:
 lexer: $(oS)
 	$(CC) $(CFLAGS) -o bin/lexer $(oS)
 
-testl:
-	-bin/lexer test/sample.tny
+testa:
+	-bin/lexer test/test1.tny
+
+testb:
+	-bin/lexer test/test2.tny
+
+testc:
+	-bin/lexer test/test3.tny

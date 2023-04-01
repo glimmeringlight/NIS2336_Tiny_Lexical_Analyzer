@@ -125,7 +125,7 @@ TokenType getToken(void)
         break;
 
       case START:
-        if (c == ' '){ //初始读入空格，忽略并继续读
+        if (c == ' ' || c == '\n'){ //初始读入空格，忽略并继续读
           save = FALSE;
           state = START;
         }else if(c == EOF){
@@ -162,10 +162,9 @@ TokenType getToken(void)
           if (c == '*') currentToken = TIMES;
           if (c == '/') currentToken = OVER;
         }else{
-          if (c != '\n')ungetNextChar(); 
-          save = FALSE;
-          state = START;
-          // currentToken = ERROR;
+          save = TRUE;
+          state = DONE;
+          currentToken = ERROR;
         }
         break;
         
