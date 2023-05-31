@@ -6,5 +6,5 @@
 make clean
 make lexer
 # to run the test
-make testl
+make testa
 ```
