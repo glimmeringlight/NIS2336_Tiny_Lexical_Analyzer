@@ -1,4 +1,8 @@
-# A Compiler for Tiny Language (Now just a lexer)
+# Lexical Analyzer for Tiny Language
+
+## Introduction
+
+NIS2336 **Compiler Principles**: Course project.
 
 ## Build
 
